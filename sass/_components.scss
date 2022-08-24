@@ -272,6 +272,7 @@ display: flex;
     display: inline-block;
     cursor: pointer;
     background-color: transparent;
+    transition: all .2s;
 
     & span {
         margin-left: 3px;
@@ -365,6 +366,10 @@ display: flex;
         margin-right: auto;
     }
 
+    &__friends {
+        display: flex;
+    }
+
     &__photo {
         box-sizing: content-box;
         height: 4rem;
@@ -373,7 +378,7 @@ display: flex;
         border: 3px solid white;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
@@ -387,12 +392,12 @@ display: flex;
     padding: 3rem;
     margin-bottom: 3.5rem;
     position: relative;
+    overflow: hidden;
 
     &__text {
         margin-bottom: 2rem;
         z-index: 10;
-        position: relative;
-        overflow: hidden;
+        position: relative;   
     }
 
     &__user {
@@ -434,12 +439,27 @@ display: flex;
         position: absolute;
         top: -2.75rem;
         left: -1rem;
+        line-height: 1;
         font-size: 20rem;
         color: var(--color-grey-light-2);
         font-family: sans-serif;
-        line-height: 1;
         z-index: 1;
     }
-
-
 }
+
+
+////////////////////
+//  CALL TO ACTION
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+}
+
+

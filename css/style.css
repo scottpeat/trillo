@@ -281,7 +281,8 @@ body {
   padding: 2px;
   display: inline-block;
   cursor: pointer;
-  background-color: transparent; }
+  background-color: transparent;
+  transition: all .2s; }
   .btn-inline span {
     margin-left: 3px;
     transition: margin-left .2s; }
@@ -337,6 +338,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -344,19 +347,19 @@ body {
     border-radius: 50%;
     border: 3px solid white; }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .review {
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   margin-bottom: 3.5rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .review__text {
     margin-bottom: 2rem;
     z-index: 10;
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
   .review__user {
     display: flex;
     align-items: center; }
@@ -384,8 +387,17 @@ body {
     position: absolute;
     top: -2.75rem;
     left: -1rem;
+    line-height: 1;
     font-size: 20rem;
     color: var(--color-grey-light-2);
     font-family: sans-serif;
-    line-height: 1;
     z-index: 1; }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
